@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int preenchermatriz(int matriz [3][3]);
+void preenchermatriz(int matriz [3][3]);
 
 int main (){
  int minhamatriz[3][3];
@@ -19,7 +19,7 @@ return 0;
 
 }
 
-int preenchermatriz(int matriz [3][3]){
+void preenchermatriz(int matriz [3][3]){
  printf("Digite 9 numeros para preencher a matriz 3x3:\n");
  for (int i=0; i<3; i++){
     for (int j=0; j<3; j++){
@@ -27,5 +27,4 @@ int preenchermatriz(int matriz [3][3]){
          scanf("%d", &matriz[i][j]);
     }
  }
-
 }
